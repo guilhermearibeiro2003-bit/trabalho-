@@ -1,0 +1,203 @@
+/*
+Descricao: Blog Steel Ball Run Archives
+nome_arquivo: style.css
+nome_exercicio: Blog sobre Steel Ball Run
+nome_aluno: SEU NOME COMPLETO
+email_aluno: SEU EMAIL
+turma: CODIGO DA SUA TURMA
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2fb;
+    color: #1c2cc4;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #142d4e;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+header p {
+    color: #eae8eb;
+    margin: 10px 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: #dad9d9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #070707;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    border: #ebeef1
+    padding: 25px;;
+    margin-bottom: 45px;
+    scroll-margin-top: 20px;
+}
+
+h2 {
+    color: #f7f2ef;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f3f0ec;
+    padding-bottom: 8px;
+}
+
+.apresentacao {
+    background-color: #011064;
+    padding: 45px 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.apresentacao h2 {
+    color: #dbd9d8;
+    border: none;
+}
+
+.apresentacao p {
+    color: #ffffff
+}
+
+.artigos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.post {
+    background-color: #fffaf0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #00000020;
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.imagem-post {
+    height: 200px;
+    background-color: #c4a575;
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-post {
+    padding: 20px;
+}
+
+.categoria {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.post h3 {
+    margin: 10px 0;
+    color: #382719;
+}
+
+.leia-mais {
+    display: inline-block;
+    margin-top: 15px;
+    color: #7c4b22;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.leia-mais:hover {
+    color: #c18b3c;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.categoria-card {
+    background-color: #e6d3af;
+    padding: 25px 18px;
+    border-radius: 10px;
+    border: 1px solid #c49a55;
+}
+
+.categoria-card h3 {
+    color: #7c4b22;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #757474;
+    color: #f4ead5;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 800px) {
+    .artigos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    .artigos,
+    .categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .apresentacao {
+        padding: 30px 20px;
+    }
+}
+
+.apresentacao h2 {
+    color: white
+}
